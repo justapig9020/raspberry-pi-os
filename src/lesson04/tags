@@ -1,0 +1,222 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARMGNU	Makefile	/^ARMGNU ?= aarch64-linux-gnu$/;"	m
+ASMOPS	Makefile	/^ASMOPS = -Iinclude $/;"	m
+ASM_FILES	Makefile	/^ASM_FILES = $(wildcard $(SRC_DIR)\/*.S)$/;"	m
+AUX_ENABLES	include/peripherals/mini_uart.h	6;"	d
+AUX_MU_BAUD_REG	include/peripherals/mini_uart.h	17;"	d
+AUX_MU_CNTL_REG	include/peripherals/mini_uart.h	15;"	d
+AUX_MU_IER_REG	include/peripherals/mini_uart.h	8;"	d
+AUX_MU_IIR_REG	include/peripherals/mini_uart.h	9;"	d
+AUX_MU_IO_REG	include/peripherals/mini_uart.h	7;"	d
+AUX_MU_LCR_REG	include/peripherals/mini_uart.h	10;"	d
+AUX_MU_LSR_REG	include/peripherals/mini_uart.h	12;"	d
+AUX_MU_MCR_REG	include/peripherals/mini_uart.h	11;"	d
+AUX_MU_MSR_REG	include/peripherals/mini_uart.h	13;"	d
+AUX_MU_SCRATCH	include/peripherals/mini_uart.h	14;"	d
+AUX_MU_STAT_REG	include/peripherals/mini_uart.h	16;"	d
+BUILD_DIR	Makefile	/^BUILD_DIR = build$/;"	m
+COPS	Makefile	/^COPS = -Wall -nostdlib -nostartfiles -ffreestanding -Iinclude -mgeneral-regs-only$/;"	m
+C_FILES	Makefile	/^C_FILES = $(wildcard $(SRC_DIR)\/*.c)$/;"	m
+DEP_FILES	Makefile	/^DEP_FILES = $(OBJ_FILES:%.o=%.d)$/;"	m
+DISABLE_BASIC_IRQS	include/peripherals/irq.h	15;"	d
+DISABLE_IRQS_1	include/peripherals/irq.h	13;"	d
+DISABLE_IRQS_2	include/peripherals/irq.h	14;"	d
+ENABLE_BASIC_IRQS	include/peripherals/irq.h	12;"	d
+ENABLE_IRQS_1	include/peripherals/irq.h	10;"	d
+ENABLE_IRQS_2	include/peripherals/irq.h	11;"	d
+ERROR_INVALID_EL0_32	include/entry.h	24;"	d
+ERROR_INVALID_EL0_64	include/entry.h	19;"	d
+ERROR_INVALID_EL1h	include/entry.h	14;"	d
+ERROR_INVALID_EL1t	include/entry.h	9;"	d
+FIQ_CONTROL	include/peripherals/irq.h	9;"	d
+FIQ_INVALID_EL0_32	include/entry.h	23;"	d
+FIQ_INVALID_EL0_64	include/entry.h	18;"	d
+FIQ_INVALID_EL1h	include/entry.h	13;"	d
+FIQ_INVALID_EL1t	include/entry.h	8;"	d
+FIRST_TASK	include/sched.h	12;"	d
+GPCLR0	include/peripherals/gpio.h	8;"	d
+GPFSEL1	include/peripherals/gpio.h	6;"	d
+GPPUD	include/peripherals/gpio.h	9;"	d
+GPPUDCLK0	include/peripherals/gpio.h	10;"	d
+GPSET0	include/peripherals/gpio.h	7;"	d
+HCR_RW	include/arm/sysregs.h	22;"	d
+HCR_VALUE	include/arm/sysregs.h	23;"	d
+HIGH_MEMORY	include/mm.h	14;"	d
+INIT_TASK	include/sched.h	53;"	d
+IRQ_BASIC_PENDING	include/peripherals/irq.h	6;"	d
+IRQ_INVALID_EL0_32	include/entry.h	22;"	d
+IRQ_INVALID_EL0_64	include/entry.h	17;"	d
+IRQ_INVALID_EL1h	include/entry.h	12;"	d
+IRQ_INVALID_EL1t	include/entry.h	7;"	d
+IRQ_PENDING_1	include/peripherals/irq.h	7;"	d
+IRQ_PENDING_2	include/peripherals/irq.h	8;"	d
+LAST_TASK	include/sched.h	13;"	d
+LOW_MEMORY	include/mm.h	13;"	d
+NR_TASKS	include/sched.h	10;"	d
+OBJ_FILES	Makefile	/^OBJ_FILES = $(C_FILES:$(SRC_DIR)\/%.c=$(BUILD_DIR)\/%_c.o)$/;"	m
+PAGE_SHIFT	include/mm.h	6;"	d
+PAGE_SIZE	include/mm.h	10;"	d
+PAGING_MEMORY	include/mm.h	16;"	d
+PAGING_PAGES	include/mm.h	17;"	d
+PBASE	include/peripherals/base.h	4;"	d
+SCR_NS	include/arm/sysregs.h	31;"	d
+SCR_RESERVED	include/arm/sysregs.h	29;"	d
+SCR_RW	include/arm/sysregs.h	30;"	d
+SCR_VALUE	include/arm/sysregs.h	32;"	d
+SCTLR_D_CACHE_DISABLED	include/arm/sysregs.h	12;"	d
+SCTLR_EE_LITTLE_ENDIAN	include/arm/sysregs.h	9;"	d
+SCTLR_EOE_LITTLE_ENDIAN	include/arm/sysregs.h	10;"	d
+SCTLR_I_CACHE_DISABLED	include/arm/sysregs.h	11;"	d
+SCTLR_MMU_DISABLED	include/arm/sysregs.h	13;"	d
+SCTLR_MMU_ENABLED	include/arm/sysregs.h	14;"	d
+SCTLR_RESERVED	include/arm/sysregs.h	8;"	d
+SCTLR_VALUE_MMU_DISABLED	include/arm/sysregs.h	16;"	d
+SECTION_SHIFT	include/mm.h	8;"	d
+SECTION_SIZE	include/mm.h	11;"	d
+SPSR_EL1h	include/arm/sysregs.h	39;"	d
+SPSR_MASK_ALL	include/arm/sysregs.h	38;"	d
+SPSR_VALUE	include/arm/sysregs.h	40;"	d
+SRC_DIR	Makefile	/^SRC_DIR = src$/;"	m
+SYNC_INVALID_EL0_32	include/entry.h	21;"	d
+SYNC_INVALID_EL0_64	include/entry.h	16;"	d
+SYNC_INVALID_EL1h	include/entry.h	11;"	d
+SYNC_INVALID_EL1t	include/entry.h	6;"	d
+SYSTEM_TIMER_IRQ_0	include/peripherals/irq.h	17;"	d
+SYSTEM_TIMER_IRQ_1	include/peripherals/irq.h	18;"	d
+SYSTEM_TIMER_IRQ_2	include/peripherals/irq.h	19;"	d
+SYSTEM_TIMER_IRQ_3	include/peripherals/irq.h	20;"	d
+S_FRAME_SIZE	include/entry.h	4;"	d
+TABLE_SHIFT	include/mm.h	7;"	d
+TASK_RUNNING	include/sched.h	15;"	d
+THREAD_CPU_CONTEXT	include/sched.h	4;"	d
+THREAD_SIZE	include/sched.h	8;"	d
+TIMER_C0	include/peripherals/timer.h	9;"	d
+TIMER_C1	include/peripherals/timer.h	10;"	d
+TIMER_C2	include/peripherals/timer.h	11;"	d
+TIMER_C3	include/peripherals/timer.h	12;"	d
+TIMER_CHI	include/peripherals/timer.h	8;"	d
+TIMER_CLO	include/peripherals/timer.h	7;"	d
+TIMER_CS	include/peripherals/timer.h	6;"	d
+TIMER_CS_M0	include/peripherals/timer.h	14;"	d
+TIMER_CS_M1	include/peripherals/timer.h	15;"	d
+TIMER_CS_M2	include/peripherals/timer.h	16;"	d
+TIMER_CS_M3	include/peripherals/timer.h	17;"	d
+_ENTRY_H	include/entry.h	2;"	d
+_FORK_H	include/fork.h	2;"	d
+_IRQ_H	include/irq.h	2;"	d
+_MINI_UART_H	include/mini_uart.h	2;"	d
+_MM_H	include/mm.h	2;"	d
+_P_BASE_H	include/peripherals/base.h	2;"	d
+_P_GPIO_H	include/peripherals/gpio.h	2;"	d
+_P_IRQ_H	include/peripherals/irq.h	2;"	d
+_P_MINI_UART_H	include/peripherals/mini_uart.h	2;"	d
+_P_TIMER_H	include/peripherals/timer.h	2;"	d
+_SCHED_H	include/sched.h	2;"	d
+_SYSREGS_H	include/arm/sysregs.h	2;"	d
+_TIMER_H	include/timer.h	2;"	d
+_UTILS_H	include/utils.h	2;"	d
+__TFP_PRINTF__	include/printf.h	92;"	d
+_schedule	src/sched.c	/^void _schedule(void)$/;"	f
+_start	src/boot.S	/^_start:$/;"	l
+a2d	src/printf.c	/^static int a2d(char ch)$/;"	f	file:
+a2i	src/printf.c	/^static char a2i(char ch, char** src,int base,int* nump)$/;"	f	file:
+copy_process	src/fork.c	/^int copy_process(unsigned long fn, unsigned long arg)$/;"	f
+counter	include/sched.h	/^	long counter;$/;"	m	struct:task_struct
+cpu_context	include/sched.h	/^	struct cpu_context cpu_context;$/;"	m	struct:task_struct	typeref:struct:task_struct::cpu_context
+cpu_context	include/sched.h	/^struct cpu_context {$/;"	s
+cpu_switch_to	src/sched.S	/^cpu_switch_to:$/;"	l
+curVal	src/timer.c	/^unsigned int curVal = 0;$/;"	v
+current	src/sched.c	/^struct task_struct *current = &(init_task);$/;"	v	typeref:struct:task_struct
+delay	src/utils.S	/^delay:$/;"	l
+disable_irq	src/irq.S	/^disable_irq:$/;"	l
+el1_entry	src/boot.S	/^el1_entry:$/;"	l
+el1_irq	src/entry.S	/^el1_irq:$/;"	l
+enable_interrupt_controller	src/irq.c	/^void enable_interrupt_controller()$/;"	f
+enable_irq	src/irq.S	/^enable_irq:$/;"	l
+entry_error_messages	src/irq.c	/^const char *entry_error_messages[] = {$/;"	v
+err_hang	src/entry.S	/^err_hang: b err_hang$/;"	l
+error_invalid_el0_32	src/entry.S	/^error_invalid_el0_32:$/;"	l
+error_invalid_el0_64	src/entry.S	/^error_invalid_el0_64:$/;"	l
+error_invalid_el1h	src/entry.S	/^error_invalid_el1h:$/;"	l
+error_invalid_el1t	src/entry.S	/^error_invalid_el1t:$/;"	l
+fiq_invalid_el0_32	src/entry.S	/^fiq_invalid_el0_32:$/;"	l
+fiq_invalid_el0_64	src/entry.S	/^fiq_invalid_el0_64:$/;"	l
+fiq_invalid_el1h	src/entry.S	/^fiq_invalid_el1h:$/;"	l
+fiq_invalid_el1t	src/entry.S	/^fiq_invalid_el1t:$/;"	l
+fp	include/sched.h	/^	unsigned long fp;$/;"	m	struct:cpu_context
+free_page	src/mm.c	/^void free_page(unsigned long p){$/;"	f
+get32	src/utils.S	/^get32:$/;"	l
+get_el	src/utils.S	/^get_el:$/;"	l
+get_free_page	src/mm.c	/^unsigned long get_free_page()$/;"	f
+handle_irq	src/irq.c	/^void handle_irq(void)$/;"	f
+handle_timer_irq	src/timer.c	/^void handle_timer_irq( void ) $/;"	f
+i2a	src/printf.c	/^static void i2a (int num, char * bf)$/;"	f	file:
+init_printf	src/printf.c	/^void init_printf(void* putp,void (*putf) (void*,char))$/;"	f
+init_task	src/sched.c	/^static struct task_struct init_task = INIT_TASK;$/;"	v	typeref:struct:task_struct	file:
+interval	src/timer.c	/^const unsigned int interval = 200000;$/;"	v
+irq_invalid_el0_32	src/entry.S	/^irq_invalid_el0_32:$/;"	l
+irq_invalid_el0_64	src/entry.S	/^irq_invalid_el0_64:$/;"	l
+irq_invalid_el1t	src/entry.S	/^irq_invalid_el1t:$/;"	l
+irq_vector_init	src/irq.S	/^irq_vector_init:$/;"	l
+kernel_main	src/kernel.c	/^void kernel_main(void)$/;"	f
+li2a	src/printf.c	/^static void li2a (long num, char * bf)$/;"	f	file:
+master	src/boot.S	/^master:$/;"	l
+mem_map	src/mm.c	/^static unsigned short mem_map [ PAGING_PAGES ] = {0,};$/;"	v	file:
+memzero	src/mm.S	/^memzero:$/;"	l
+nr_tasks	src/sched.c	/^int nr_tasks = 1;$/;"	v
+pc	include/sched.h	/^	unsigned long pc;$/;"	m	struct:cpu_context
+preempt_count	include/sched.h	/^	long preempt_count;$/;"	m	struct:task_struct
+preempt_disable	src/sched.c	/^void preempt_disable(void)$/;"	f
+preempt_enable	src/sched.c	/^void preempt_enable(void)$/;"	f
+printf	include/printf.h	103;"	d
+priority	include/sched.h	/^	long priority;$/;"	m	struct:task_struct
+proc_hang	src/boot.S	/^proc_hang: $/;"	l
+process	src/kernel.c	/^void process(char *array)$/;"	f
+put32	src/utils.S	/^put32:$/;"	l
+putc	src/mini_uart.c	/^void putc ( void* p, char c)$/;"	f
+putcf	src/printf.c	/^typedef void (*putcf) (void*,char);$/;"	t	file:
+putchw	src/printf.c	/^static void putchw(void* putp,putcf putf,int n, char z, char* bf)$/;"	f	file:
+putcp	src/printf.c	/^static void putcp(void* p,char c)$/;"	f	file:
+ret_from_fork	src/entry.S	/^ret_from_fork:$/;"	l
+schedule	src/sched.c	/^void schedule(void)$/;"	f
+schedule_tail	src/sched.c	/^void schedule_tail(void) {$/;"	f
+show_invalid_entry_message	src/irq.c	/^void show_invalid_entry_message(int type, unsigned long esr, unsigned long address)$/;"	f
+sp	include/sched.h	/^	unsigned long sp;$/;"	m	struct:cpu_context
+sprintf	include/printf.h	104;"	d
+state	include/sched.h	/^	long state;	$/;"	m	struct:task_struct
+stdout_putf	src/printf.c	/^static putcf stdout_putf;$/;"	v	file:
+stdout_putp	src/printf.c	/^static void* stdout_putp;$/;"	v	file:
+switch_to	src/sched.c	/^void switch_to(struct task_struct * next) $/;"	f
+sync_invalid_el0_32	src/entry.S	/^sync_invalid_el0_32:$/;"	l
+sync_invalid_el0_64	src/entry.S	/^sync_invalid_el0_64:$/;"	l
+sync_invalid_el1h	src/entry.S	/^sync_invalid_el1h:$/;"	l
+sync_invalid_el1t	src/entry.S	/^sync_invalid_el1t:$/;"	l
+task	src/sched.c	/^struct task_struct * task[NR_TASKS] = {&(init_task), };$/;"	v	typeref:struct:task_struct
+task_struct	include/sched.h	/^struct task_struct {$/;"	s
+tfp_format	src/printf.c	/^void tfp_format(void* putp,putcf putf,char *fmt, va_list va)$/;"	f
+tfp_printf	src/printf.c	/^void tfp_printf(char *fmt, ...)$/;"	f
+tfp_sprintf	src/printf.c	/^void tfp_sprintf(char* s,char *fmt, ...)$/;"	f
+timer_init	src/timer.c	/^void timer_init ( void )$/;"	f
+timer_tick	src/sched.c	/^void timer_tick()$/;"	f
+uart_init	src/mini_uart.c	/^void uart_init ( void )$/;"	f
+uart_recv	src/mini_uart.c	/^char uart_recv ( void )$/;"	f
+uart_send	src/mini_uart.c	/^void uart_send ( char c )$/;"	f
+uart_send_string	src/mini_uart.c	/^void uart_send_string(char* str)$/;"	f
+ui2a	src/printf.c	/^static void ui2a(unsigned int num, unsigned int base, int uc,char * bf)$/;"	f	file:
+uli2a	src/printf.c	/^static void uli2a(unsigned long int num, unsigned int base, int uc,char * bf)$/;"	f	file:
+vectors	src/entry.S	/^vectors:$/;"	l
+x19	include/sched.h	/^	unsigned long x19;$/;"	m	struct:cpu_context
+x20	include/sched.h	/^	unsigned long x20;$/;"	m	struct:cpu_context
+x21	include/sched.h	/^	unsigned long x21;$/;"	m	struct:cpu_context
+x22	include/sched.h	/^	unsigned long x22;$/;"	m	struct:cpu_context
+x23	include/sched.h	/^	unsigned long x23;$/;"	m	struct:cpu_context
+x24	include/sched.h	/^	unsigned long x24;$/;"	m	struct:cpu_context
+x25	include/sched.h	/^	unsigned long x25;$/;"	m	struct:cpu_context
+x26	include/sched.h	/^	unsigned long x26;$/;"	m	struct:cpu_context
+x27	include/sched.h	/^	unsigned long x27;$/;"	m	struct:cpu_context
+x28	include/sched.h	/^	unsigned long x28;$/;"	m	struct:cpu_context

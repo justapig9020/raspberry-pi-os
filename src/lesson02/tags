@@ -1,0 +1,96 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARMGNU	Makefile	/^ARMGNU ?= aarch64-linux-gnu$/;"	m
+ASMOPS	Makefile	/^ASMOPS = -Iinclude $/;"	m
+ASM_FILES	Makefile	/^ASM_FILES = $(wildcard $(SRC_DIR)\/*.S)$/;"	m
+AUX_ENABLES	include/peripherals/mini_uart.h	6;"	d
+AUX_MU_BAUD_REG	include/peripherals/mini_uart.h	17;"	d
+AUX_MU_CNTL_REG	include/peripherals/mini_uart.h	15;"	d
+AUX_MU_IER_REG	include/peripherals/mini_uart.h	8;"	d
+AUX_MU_IIR_REG	include/peripherals/mini_uart.h	9;"	d
+AUX_MU_IO_REG	include/peripherals/mini_uart.h	7;"	d
+AUX_MU_LCR_REG	include/peripherals/mini_uart.h	10;"	d
+AUX_MU_LSR_REG	include/peripherals/mini_uart.h	12;"	d
+AUX_MU_MCR_REG	include/peripherals/mini_uart.h	11;"	d
+AUX_MU_MSR_REG	include/peripherals/mini_uart.h	13;"	d
+AUX_MU_SCRATCH	include/peripherals/mini_uart.h	14;"	d
+AUX_MU_STAT_REG	include/peripherals/mini_uart.h	16;"	d
+BUILD_DIR	Makefile	/^BUILD_DIR = build$/;"	m
+COPS	Makefile	/^COPS = -Wall -nostdlib -nostartfiles -ffreestanding -Iinclude -mgeneral-regs-only$/;"	m
+C_FILES	Makefile	/^C_FILES = $(wildcard $(SRC_DIR)\/*.c)$/;"	m
+DEP_FILES	Makefile	/^DEP_FILES = $(OBJ_FILES:%.o=%.d)$/;"	m
+GPCLR0	include/peripherals/gpio.h	8;"	d
+GPFSEL1	include/peripherals/gpio.h	6;"	d
+GPPUD	include/peripherals/gpio.h	9;"	d
+GPPUDCLK0	include/peripherals/gpio.h	10;"	d
+GPSET0	include/peripherals/gpio.h	7;"	d
+HCR_RW	include/arm/sysregs.h	22;"	d
+HCR_VALUE	include/arm/sysregs.h	23;"	d
+LOW_MEMORY	include/mm.h	11;"	d
+OBJ_FILES	Makefile	/^OBJ_FILES = $(C_FILES:$(SRC_DIR)\/%.c=$(BUILD_DIR)\/%_c.o)$/;"	m
+PAGE_SHIFT	include/mm.h	4;"	d
+PAGE_SIZE	include/mm.h	8;"	d
+PBASE	include/peripherals/base.h	4;"	d
+SCR_NS	include/arm/sysregs.h	31;"	d
+SCR_RESERVED	include/arm/sysregs.h	29;"	d
+SCR_RW	include/arm/sysregs.h	30;"	d
+SCR_VALUE	include/arm/sysregs.h	32;"	d
+SCTLR_D_CACHE_DISABLED	include/arm/sysregs.h	12;"	d
+SCTLR_EE_LITTLE_ENDIAN	include/arm/sysregs.h	9;"	d
+SCTLR_EOE_LITTLE_ENDIAN	include/arm/sysregs.h	10;"	d
+SCTLR_I_CACHE_DISABLED	include/arm/sysregs.h	11;"	d
+SCTLR_MMU_DISABLED	include/arm/sysregs.h	13;"	d
+SCTLR_MMU_ENABLED	include/arm/sysregs.h	14;"	d
+SCTLR_RESERVED	include/arm/sysregs.h	8;"	d
+SCTLR_VALUE_MMU_DISABLED	include/arm/sysregs.h	16;"	d
+SECTION_SHIFT	include/mm.h	6;"	d
+SECTION_SIZE	include/mm.h	9;"	d
+SPSR_EL1h	include/arm/sysregs.h	39;"	d
+SPSR_MASK_ALL	include/arm/sysregs.h	38;"	d
+SPSR_VALUE	include/arm/sysregs.h	40;"	d
+SRC_DIR	Makefile	/^SRC_DIR = src$/;"	m
+TABLE_SHIFT	include/mm.h	5;"	d
+_BOOT_H	include/utils.h	2;"	d
+_MINI_UART_H	include/mini_uart.h	2;"	d
+_MM_H	include/mm.h	2;"	d
+_P_BASE_H	include/peripherals/base.h	2;"	d
+_P_GPIO_H	include/peripherals/gpio.h	2;"	d
+_P_MINI_UART_H	include/peripherals/mini_uart.h	2;"	d
+_SYSREGS_H	include/arm/sysregs.h	2;"	d
+__TFP_PRINTF__	include/printf.h	92;"	d
+_start	src/boot.S	/^_start:$/;"	l
+a2d	src/printf.c	/^static int a2d(char ch)$/;"	f	file:
+a2i	src/printf.c	/^static char a2i(char ch, char** src,int base,int* nump)$/;"	f	file:
+delay	src/utils.S	/^delay:$/;"	l
+el1_entry	src/boot.S	/^el1_entry:$/;"	l
+get32	src/utils.S	/^get32:$/;"	l
+get_el	src/utils.S	/^get_el:$/;"	l
+i2a	src/printf.c	/^static void i2a (int num, char * bf)$/;"	f	file:
+init_printf	src/printf.c	/^void init_printf(void* putp,void (*putf) (void*,char))$/;"	f
+kernel_main	src/kernel.c	/^void kernel_main(void)$/;"	f
+li2a	src/printf.c	/^static void li2a (long num, char * bf)$/;"	f	file:
+master	src/boot.S	/^master:$/;"	l
+memzero	src/mm.S	/^memzero:$/;"	l
+printf	include/printf.h	103;"	d
+proc_hang	src/boot.S	/^proc_hang: $/;"	l
+put32	src/utils.S	/^put32:$/;"	l
+putc	src/mini_uart.c	/^void putc ( void* p, char c)$/;"	f
+putcf	src/printf.c	/^typedef void (*putcf) (void*,char);$/;"	t	file:
+putchw	src/printf.c	/^static void putchw(void* putp,putcf putf,int n, char z, char* bf)$/;"	f	file:
+putcp	src/printf.c	/^static void putcp(void* p,char c)$/;"	f	file:
+sprintf	include/printf.h	104;"	d
+stdout_putf	src/printf.c	/^static putcf stdout_putf;$/;"	v	file:
+stdout_putp	src/printf.c	/^static void* stdout_putp;$/;"	v	file:
+tfp_format	src/printf.c	/^void tfp_format(void* putp,putcf putf,char *fmt, va_list va)$/;"	f
+tfp_printf	src/printf.c	/^void tfp_printf(char *fmt, ...)$/;"	f
+tfp_sprintf	src/printf.c	/^void tfp_sprintf(char* s,char *fmt, ...)$/;"	f
+uart_init	src/mini_uart.c	/^void uart_init ( void )$/;"	f
+uart_recv	src/mini_uart.c	/^char uart_recv ( void )$/;"	f
+uart_send	src/mini_uart.c	/^void uart_send ( char c )$/;"	f
+uart_send_string	src/mini_uart.c	/^void uart_send_string(char* str)$/;"	f
+ui2a	src/printf.c	/^static void ui2a(unsigned int num, unsigned int base, int uc,char * bf)$/;"	f	file:
+uli2a	src/printf.c	/^static void uli2a(unsigned long int num, unsigned int base, int uc,char * bf)$/;"	f	file:
