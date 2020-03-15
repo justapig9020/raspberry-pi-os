@@ -18,7 +18,7 @@ $(BUILD_DIR)/%_c.o: $(SRC_DIR)/%.c
 	$(ARMGNU)-gcc $(COPS) $(BAUD) -MMD -c $< -o $@
 
 $(BUILD_DIR)/%_s.o: $(SRC_DIR)/%.S
-	$(ARMGNU)-gcc $(ASMOPS) -MMD -c $< -o $@
+	$(ARMGNU)-gcc $(ASMOPS) $(BAUD) -MMD -c $< -o $@
 
 C_FILES = $(wildcard $(SRC_DIR)/*.c)
 ASM_FILES = $(wildcard $(SRC_DIR)/*.S)
