@@ -4,9 +4,6 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-ARMGNU	Makefile	/^ARMGNU ?= aarch64-linux-gnu$/;"	m
-ASMOPS	Makefile	/^ASMOPS = -Iinclude $/;"	m
-ASM_FILES	Makefile	/^ASM_FILES = $(wildcard $(SRC_DIR)\/*.S)$/;"	m
 AUX_ENABLES	include/peripherals/mini_uart.h	6;"	d
 AUX_MU_BAUD_REG	include/peripherals/mini_uart.h	17;"	d
 AUX_MU_CNTL_REG	include/peripherals/mini_uart.h	15;"	d
@@ -19,10 +16,6 @@ AUX_MU_MCR_REG	include/peripherals/mini_uart.h	11;"	d
 AUX_MU_MSR_REG	include/peripherals/mini_uart.h	13;"	d
 AUX_MU_SCRATCH	include/peripherals/mini_uart.h	14;"	d
 AUX_MU_STAT_REG	include/peripherals/mini_uart.h	16;"	d
-BUILD_DIR	Makefile	/^BUILD_DIR = build$/;"	m
-COPS	Makefile	/^COPS = -Wall -nostdlib -nostartfiles -ffreestanding -Iinclude -mgeneral-regs-only$/;"	m
-C_FILES	Makefile	/^C_FILES = $(wildcard $(SRC_DIR)\/*.c)$/;"	m
-DEP_FILES	Makefile	/^DEP_FILES = $(OBJ_FILES:%.o=%.d)$/;"	m
 GPCLR0	include/peripherals/gpio.h	8;"	d
 GPFSEL1	include/peripherals/gpio.h	6;"	d
 GPPUD	include/peripherals/gpio.h	9;"	d
@@ -31,7 +24,6 @@ GPSET0	include/peripherals/gpio.h	7;"	d
 HCR_RW	include/arm/sysregs.h	22;"	d
 HCR_VALUE	include/arm/sysregs.h	23;"	d
 LOW_MEMORY	include/mm.h	11;"	d
-OBJ_FILES	Makefile	/^OBJ_FILES = $(C_FILES:$(SRC_DIR)\/%.c=$(BUILD_DIR)\/%_c.o)$/;"	m
 PAGE_SHIFT	include/mm.h	4;"	d
 PAGE_SIZE	include/mm.h	8;"	d
 PBASE	include/peripherals/base.h	4;"	d
@@ -52,7 +44,6 @@ SECTION_SIZE	include/mm.h	9;"	d
 SPSR_EL1h	include/arm/sysregs.h	39;"	d
 SPSR_MASK_ALL	include/arm/sysregs.h	38;"	d
 SPSR_VALUE	include/arm/sysregs.h	40;"	d
-SRC_DIR	Makefile	/^SRC_DIR = src$/;"	m
 TABLE_SHIFT	include/mm.h	5;"	d
 _BOOT_H	include/utils.h	2;"	d
 _MINI_UART_H	include/mini_uart.h	2;"	d
@@ -62,35 +53,39 @@ _P_GPIO_H	include/peripherals/gpio.h	2;"	d
 _P_MINI_UART_H	include/peripherals/mini_uart.h	2;"	d
 _SYSREGS_H	include/arm/sysregs.h	2;"	d
 __TFP_PRINTF__	include/printf.h	92;"	d
-_start	src/boot.S	/^_start:$/;"	l
-a2d	src/printf.c	/^static int a2d(char ch)$/;"	f	file:
-a2i	src/printf.c	/^static char a2i(char ch, char** src,int base,int* nump)$/;"	f	file:
-delay	src/utils.S	/^delay:$/;"	l
-el1_entry	src/boot.S	/^el1_entry:$/;"	l
-get32	src/utils.S	/^get32:$/;"	l
-get_el	src/utils.S	/^get_el:$/;"	l
-i2a	src/printf.c	/^static void i2a (int num, char * bf)$/;"	f	file:
-init_printf	src/printf.c	/^void init_printf(void* putp,void (*putf) (void*,char))$/;"	f
-kernel_main	src/kernel.c	/^void kernel_main(void)$/;"	f
-li2a	src/printf.c	/^static void li2a (long num, char * bf)$/;"	f	file:
-master	src/boot.S	/^master:$/;"	l
-memzero	src/mm.S	/^memzero:$/;"	l
+a2d	src/printf.c	/^static int a2d(char ch)$/;"	f	file:	signature:(char ch)
+a2i	src/printf.c	/^static char a2i(char ch, char** src,int base,int* nump)$/;"	f	file:	signature:(char ch, char** src,int base,int* nump)
+delay	include/utils.h	/^extern void delay ( unsigned long);$/;"	p	signature:( unsigned long)
+get32	include/utils.h	/^extern unsigned int get32 ( unsigned long );$/;"	p	signature:( unsigned long )
+get_el	include/utils.h	/^extern int get_el ( void );$/;"	p	signature:( void )
+i2a	src/printf.c	/^static void i2a (int num, char * bf)$/;"	f	file:	signature:(int num, char * bf)
+init_printf	include/printf.h	/^void init_printf(void* putp,void (*putf) (void*,char));$/;"	p	signature:(void* putp,void (*putf) (void*,char))
+init_printf	src/printf.c	/^void init_printf(void* putp,void (*putf) (void*,char))$/;"	f	signature:(void* putp,void (*putf) (void*,char))
+kernel_main	src/kernel.c	/^void kernel_main(void)$/;"	f	signature:(void)
+li2a	src/printf.c	/^static void li2a (long num, char * bf)$/;"	f	file:	signature:(long num, char * bf)
+memzero	include/mm.h	/^void memzero(unsigned long src, unsigned long n);$/;"	p	signature:(unsigned long src, unsigned long n)
 printf	include/printf.h	103;"	d
-proc_hang	src/boot.S	/^proc_hang: $/;"	l
-put32	src/utils.S	/^put32:$/;"	l
-putc	src/mini_uart.c	/^void putc ( void* p, char c)$/;"	f
+put32	include/utils.h	/^extern void put32 ( unsigned long, unsigned int );$/;"	p	signature:( unsigned long, unsigned int )
+putc	include/mini_uart.h	/^void putc ( void* p, char c );$/;"	p	signature:( void* p, char c )
+putc	src/mini_uart.c	/^void putc ( void* p, char c)$/;"	f	signature:( void* p, char c)
 putcf	src/printf.c	/^typedef void (*putcf) (void*,char);$/;"	t	file:
-putchw	src/printf.c	/^static void putchw(void* putp,putcf putf,int n, char z, char* bf)$/;"	f	file:
-putcp	src/printf.c	/^static void putcp(void* p,char c)$/;"	f	file:
+putchw	src/printf.c	/^static void putchw(void* putp,putcf putf,int n, char z, char* bf)$/;"	f	file:	signature:(void* putp,putcf putf,int n, char z, char* bf)
+putcp	src/printf.c	/^static void putcp(void* p,char c)$/;"	f	file:	signature:(void* p,char c)
 sprintf	include/printf.h	104;"	d
 stdout_putf	src/printf.c	/^static putcf stdout_putf;$/;"	v	file:
 stdout_putp	src/printf.c	/^static void* stdout_putp;$/;"	v	file:
-tfp_format	src/printf.c	/^void tfp_format(void* putp,putcf putf,char *fmt, va_list va)$/;"	f
-tfp_printf	src/printf.c	/^void tfp_printf(char *fmt, ...)$/;"	f
-tfp_sprintf	src/printf.c	/^void tfp_sprintf(char* s,char *fmt, ...)$/;"	f
-uart_init	src/mini_uart.c	/^void uart_init ( void )$/;"	f
-uart_recv	src/mini_uart.c	/^char uart_recv ( void )$/;"	f
-uart_send	src/mini_uart.c	/^void uart_send ( char c )$/;"	f
-uart_send_string	src/mini_uart.c	/^void uart_send_string(char* str)$/;"	f
-ui2a	src/printf.c	/^static void ui2a(unsigned int num, unsigned int base, int uc,char * bf)$/;"	f	file:
-uli2a	src/printf.c	/^static void uli2a(unsigned long int num, unsigned int base, int uc,char * bf)$/;"	f	file:
+tfp_format	include/printf.h	/^void tfp_format(void* putp,void (*putf) (void*,char),char *fmt, va_list va);$/;"	p	signature:(void* putp,void (*putf) (void*,char),char *fmt, va_list va)
+tfp_format	src/printf.c	/^void tfp_format(void* putp,putcf putf,char *fmt, va_list va)$/;"	f	signature:(void* putp,putcf putf,char *fmt, va_list va)
+tfp_printf	include/printf.h	/^void tfp_printf(char *fmt, ...);$/;"	p	signature:(char *fmt, ...)
+tfp_printf	src/printf.c	/^void tfp_printf(char *fmt, ...)$/;"	f	signature:(char *fmt, ...)
+tfp_sprintf	include/printf.h	/^void tfp_sprintf(char* s,char *fmt, ...);$/;"	p	signature:(char* s,char *fmt, ...)
+tfp_sprintf	src/printf.c	/^void tfp_sprintf(char* s,char *fmt, ...)$/;"	f	signature:(char* s,char *fmt, ...)
+uart_init	include/mini_uart.h	/^void uart_init ( void );$/;"	p	signature:( void )
+uart_init	src/mini_uart.c	/^void uart_init ( void )$/;"	f	signature:( void )
+uart_recv	include/mini_uart.h	/^char uart_recv ( void );$/;"	p	signature:( void )
+uart_recv	src/mini_uart.c	/^char uart_recv ( void )$/;"	f	signature:( void )
+uart_send	include/mini_uart.h	/^void uart_send ( char c );$/;"	p	signature:( char c )
+uart_send	src/mini_uart.c	/^void uart_send ( char c )$/;"	f	signature:( char c )
+uart_send_string	src/mini_uart.c	/^void uart_send_string(char* str)$/;"	f	signature:(char* str)
+ui2a	src/printf.c	/^static void ui2a(unsigned int num, unsigned int base, int uc,char * bf)$/;"	f	file:	signature:(unsigned int num, unsigned int base, int uc,char * bf)
+uli2a	src/printf.c	/^static void uli2a(unsigned long int num, unsigned int base, int uc,char * bf)$/;"	f	file:	signature:(unsigned long int num, unsigned int base, int uc,char * bf)
