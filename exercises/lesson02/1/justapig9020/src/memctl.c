@@ -1,4 +1,4 @@
-#include "iolib.h"
+#include "lib/iolib.h"
 
 void mem_dump(const char *addr, unsigned int sz)
 {

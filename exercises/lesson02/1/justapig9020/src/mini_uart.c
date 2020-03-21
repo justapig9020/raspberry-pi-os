@@ -1,4 +1,4 @@
-#include "utils.h"
+#include "arch/utils.h"
 #include "peripherals/mini_uart.h"
 #include "peripherals/gpio.h"
 

@@ -1,4 +1,5 @@
-#include "mm.h"
+#include "arch/mm.h"
+#include "arch/sysregs.h"
 
 .section ".text.boot"
 
@@ -14,6 +15,12 @@
     and x0, x0, #0xFF
 .endm
 
+.macro init_uart
+    mov    x0, #BAUD_RATE
+    bl     uart_init
+.endm
+
+
 .globl _start
 _start:
     get_mpid
@@ -21,6 +28,12 @@ _start:
     b      proc_hang
 
 master:
+    clean_bss
+    mov sp, #LOW_MEMORY     // EL3 sp
+
+    init_uart
+    bl  prt_el
+
 	ldr	x0, =SCTLR_VALUE_MMU_DISABLED
 	msr	sctlr_el1, x0		
 
@@ -39,10 +52,7 @@ master:
 	eret		
 
 el1_entry:
-    clean_bss
-    mov    sp, #LOW_MEMORY
-    mov    x0, #BAUD_RATE
-    bl     uart_init
+    mov sp, #LOW_MEMORY  // EL1 sp
     b      start_kernel
 
 
